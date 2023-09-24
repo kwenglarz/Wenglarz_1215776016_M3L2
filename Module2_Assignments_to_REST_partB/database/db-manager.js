@@ -35,7 +35,7 @@ upDateStudent = function (id, student) {
         updatedStudent.phone = student.phone;
         updatedStudent.email = student.email;
         updatedStudent.description = student.description;
-        
+
         students[students.indexOf(specificStudent)] = updatedStudent;
     }
 };
@@ -55,7 +55,6 @@ getSpecificStudent = function (id) {
 }
 // delete a specific student
 delSpecificStudent = function (id) {
-    console.log(id);
     const specificStudent = students.find(student => student.id === id);
     if(specificStudent){
         const index = students.indexOf(specificStudent);
